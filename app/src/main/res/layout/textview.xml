@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:paddingLeft="145dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tv1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布草更换"
+            android:textColor="#525252"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布草更换"
+            android:textColor="#0f0f0f"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

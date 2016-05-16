@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wys.myapplication.activity.HorizonalActivity">
+<cn.finalteam.galleryfinal.widget.HorizontalListView
+    android:id="@+id/listview"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="#0077ff"
+    android:layout_centerHorizontal="true"
+    ></cn.finalteam.galleryfinal.widget.HorizontalListView>
+    <com.example.wys.myapplication.util.ProgressView
+        android:layout_below="@+id/listview"
+        android:layout_width="match_parent"
+        android:id="@+id/ffff"
+        android:layout_height="150dp" />
+</RelativeLayout>

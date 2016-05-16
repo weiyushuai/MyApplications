@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wys.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //地图包、搜索包需要的基础权限
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //定位包、导航包需要的额外权限（注：基础权限也需要）
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="demo_key"
+            android:value="342b0df3bc501afcc70d97289076bc70" />
+
+        <activity
+            android:name=".activity.FirstActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.example.wys.myapplication.activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CardActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.DataBaseActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.BaseTitleBarActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".activity.EventActivity" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity android:name=".Fragment.HomeFragment" />
+        <activity android:name=".activity.ListActivity" />
+        <activity
+            android:name=".activity.CreatActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".Fragment.MyFragment" />
+        <activity android:name=".Fragment.MessageFragment" />
+        <activity android:name=".activity.BaiduMapActivity" />
+        <activity android:name=".activity.MyViewActivity" />
+        <activity android:name=".map.GaoDeMapActivity" />
+        <activity android:name=".activity.HorizonalActivity"></activity>
+    </application>
+
+</manifest>

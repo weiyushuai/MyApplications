@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:background="#FFFFFF"
+        android:text="动画"
+        android:textSize="18sp"
+        android:textColor="#0077FF"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="默认通知(已被抛弃，但是通用)" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="默认通知(API11之后可用)" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="默认通知(API16之后可用)" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="自定义通知" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="清除通知" />
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="卡片" />
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="数据库" />
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="EventBus" />
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+</LinearLayout>
